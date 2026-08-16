@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Selamat Ulang Tahun, Caca 🤍</title>
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0; min-height:100vh; overflow-x:hidden;
+  font-family:Georgia,"Times New Roman",serif;
+  background:linear-gradient(135deg,#fff0f6,#ffd6e7,#fff7fb);
+  color:#71334e;
+}
+.hearts span{
+  position:fixed; bottom:-30px; font-size:20px; opacity:.6;
+  animation:float 8s linear infinite; z-index:0;
+}
+.hearts span:nth-child(1){left:8%;animation-delay:0s}.hearts span:nth-child(2){left:23%;animation-delay:2s}
+.hearts span:nth-child(3){left:43%;animation-delay:4s}.hearts span:nth-child(4){left:67%;animation-delay:1s}
+.hearts span:nth-child(5){left:88%;animation-delay:3s}
+@keyframes float{to{transform:translateY(-115vh) rotate(25deg);opacity:0}}
+.wrap{position:relative;z-index:1;max-width:760px;margin:auto;padding:28px 18px 60px}
+.card{
+  background:rgba(255,255,255,.78); backdrop-filter:blur(10px);
+  border:1px solid rgba(255,150,190,.35); border-radius:28px;
+  box-shadow:0 18px 50px rgba(170,70,110,.16); overflow:hidden;
+}
+.cover{text-align:center;padding:42px 25px 30px}
+.small{letter-spacing:3px;text-transform:uppercase;font-size:12px;color:#bd6a8d}
+h1{font-size:clamp(34px,8vw,58px);margin:12px 0 8px;color:#a94370}
+.subtitle{font-size:18px;line-height:1.7}
+.photo{padding:0 20px}
+.photo img{width:100%;display:block;border-radius:20px;max-height:620px;object-fit:cover}
+.message{padding:32px 28px 38px;line-height:1.9;font-size:17px}
+.message p{margin:0 0 18px}
+.highlight{font-size:22px;text-align:center;color:#a94370;font-weight:bold;margin:26px 0}
+.signature{text-align:right;font-style:italic;margin-top:28px}
+.btn{
+  display:block;margin:10px auto 0;border:0;border-radius:999px;
+  padding:13px 24px;background:#d85c8b;color:white;font-size:15px;
+  cursor:pointer;box-shadow:0 8px 20px rgba(216,92,139,.25)
+}
+.hidden{display:none}
+.reveal{animation:fade .9s ease}
+@keyframes fade{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.footer{text-align:center;padding:20px;color:#b16b88;font-size:13px}
+</style>
+</head>
+<body>
+<div class="hearts"><span>♡</span><span>♥</span><span>♡</span><span>♥</span><span>♡</span></div>
+
+<main class="wrap">
+  <section class="card">
+    <div class="cover">
+      <div class="small">a little letter for</div>
+      <h1>Happy Birthday, Caca 🤍</h1>
+      <div class="subtitle">Semoga hari ini menjadi salah satu hari yang paling lembut untuk kamu.</div>
+    </div>
+
+    <div class="photo">
+      <img src="caca.jpg" alt="Foto Caca">
+    </div>
+
+    <div class="message">
+      <p>Hai, Caca.</p>
+
+      <p>Selamat ulang tahun. Hari ini mungkin cuma terlihat seperti bertambahnya satu angka dalam umur kamu, tapi buat aku, hari ini adalah pengingat bahwa dunia pernah menghadirkan seseorang sebaik dan seberarti kamu.</p>
+
+      <p>Aku nggak tahu apakah kata-kata ini akan cukup untuk menggambarkan semuanya. Ada banyak hal yang mungkin nggak pernah tersampaikan dengan baik, banyak perasaan yang kadang cuma bisa disimpan sendiri.</p>
+
+      <p>Aku cuma ingin kamu tahu, di hari spesial kamu ini, aku benar-benar berharap kamu selalu dikelilingi hal-hal baik. Semoga langkah kamu dipermudah, hati kamu dijaga, dan semua hal yang selama ini kamu semogakan perlahan menemukan jalannya.</p>
+
+      <div class="highlight">“Kalau suatu hari kamu merasa sendirian, semoga kamu ingat bahwa kamu pernah menjadi seseorang yang begitu berarti.”</div>
+
+      <p>Maaf kalau selama ini ada kata atau sikap yang pernah membuat kamu kecewa. Mungkin aku nggak selalu bisa menjadi orang yang paling mengerti kamu, tapi aku selalu berharap kamu baik-baik saja, bahkan ketika keadaan tidak lagi sama seperti dulu.</p>
+
+      <p>Terima kasih sudah pernah hadir, pernah berbagi cerita, tawa, dan banyak hal kecil yang ternyata punya tempat besar di ingatan.</p>
+
+      <p>Semoga di umur yang baru ini, kamu lebih banyak tersenyum daripada menangis. Semoga kamu menemukan alasan-alasan baru untuk bahagia. Dan semoga apa pun yang sedang kamu perjuangkan, suatu hari nanti bisa kamu lihat sebagai sesuatu yang berhasil kamu lewati.</p>
+
+      <p class="highlight">Selamat ulang tahun, Caca. 🤍<br>Semoga kamu selalu bahagia, ya.</p>
+
+      <p class="signature">— seseorang yang masih mendoakan kamu diam-diam.</p>
+
+      <button class="btn" onclick="document.getElementById('extra').classList.toggle('hidden')">Buka satu pesan lagi 💌</button>
+
+      <div id="extra" class="hidden reveal">
+        <p style="text-align:center;margin-top:24px">
+          Tidak semua orang yang datang harus tinggal selamanya.<br>
+          Tapi beberapa orang akan tetap punya tempat,<br>
+          meskipun hanya sebagai doa yang diam-diam kita titipkan. 🤍
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer">Made with a little pink, a lot of memories, and sincere wishes. 🌷</div>
+</main>
+</body>
+</html>
